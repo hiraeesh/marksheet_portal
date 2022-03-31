@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" 
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+      <!-- JavaScript Bundle with Popper.js -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" 
+      integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
+      </script>
+</head>
+<body>
+{% if fight %}
+  {% for fb in fight %}
+      <h1>>Name {{fb.name}}</h1>
+      <h1>>Name {{fb.roll}}</h1>
+      <h1>>Name {{fb.programme}}</h1>
+      <button class="btn btn-primary">button</button>
+    {% endfor %}
+{% else %}
+<h1>write correct user name</h1>
+{% endif %}
+
+
+
+
+      <!-- {% if bigdream %}
+      <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">roll</th>
+                <th scope="col">TH/PR</th>
+                <th scope="col">IA</th>
+                <th scope="col">OVERALL</th>
+                <th scope="col">CREDITS EARNED</th>
+                <th scope="col">GRADE POINTS</th>
+                <th scope="col">CG</th>
+                <th scope="col">SGPI</th>
+              </tr>
+            </thead>
+            
+           
+            <tbody>
+                  {% for form in bigdream %}
+              <tr>
+                <th scope="row">{{ form.name}}</th>
+                <td>{{ form.roll }}</td>
+                <td>{{ form.tr_or_prone }}</td>
+                <td>{{form.overallone }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+            
+            
+          </table>
+          {% endif %} -->
+
+</body>
+</html>
